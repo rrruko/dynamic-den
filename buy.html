@@ -1,0 +1,84 @@
+<html>
+  <meta charset="utf-8">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous">
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', e => {
+      document.getElementById('submit').addEventListener('click', e => {
+        window.location = 'thanks.html'
+      })
+    })
+  </script>
+
+  <style>
+    .box {
+      margin-left: 10em;
+      margin-right: 10em;
+    }
+    .title {
+      display: block;
+      text-align: center;
+    }
+    .button {
+      margin: auto;
+    }
+    .hero-body {
+      text-align: center;
+    }
+    .form {
+      max-width: 40em;
+      margin: auto;
+    }
+    .form-field {
+      margin-bottom: 1em;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-body">
+          <div class="title">Buy</div>
+        </div>
+      </section>
+      
+      <div class="form">
+        <div class="form-field">
+          <label class="label">First name</label>
+          <input class="input" type="text" placeholder="First name">
+        </div>
+
+        <div class="form-field">
+          <label class="label">Last name</label>
+          <input class="input" type="text" placeholder="Last name">
+        </div>
+
+        <div class="form-field">
+          <label class="label">Username</label>
+          <input class="input" type="text" placeholder="Username">
+        </div>
+
+        <div class="form-field">
+          <label class="label">Password</label>
+          <input class="input" type="text" placeholder="Password">
+        </div>
+
+        <div class="form-field">
+          <label class="label">Email</label>
+          <input class="input" type="text" placeholder="Email">
+        </div>
+
+        <div class="form-field">
+          <label class="label">Credit card stuff</label>
+          <input class="input" type="text" placeholder="Credit card stuff">
+        </div>
+
+        <button class="button is-success" id="submit">Submit</button>
+
+      </div>
+
+    </div>
+  </body>
+</html>
+
