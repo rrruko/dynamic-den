@@ -34,15 +34,37 @@
     .form-field {
       margin-bottom: 1em;
     }
+	.left {
+		left: 0;
+		width:75%;
+	}
+	.right {
+		right: 0;
+		width: 25%;
+	}
+	.sidebar {
+		background-color: gainsboro;
+		height: 100%;
+	}
+	.split {
+		height: 100%;
+		position: fixed;
+		z-index: 1;
+		bottom: 0;
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
+		padding-top: 20px;
+	}
+	h1 {
+		font-weight: bold;
+		font-size:150%;
+	}
+	
+	
   </style>
   <body>
-    <div class="container">
-      <section class="hero">
-        <div class="hero-body">
-          <div class="title">Buy</div>
-        </div>
-      </section>
-      
+    <div class="container split left">
       <div class="form">
         <div class="form-field">
           <label class="label">First name</label>
@@ -55,13 +77,8 @@
         </div>
 
         <div class="form-field">
-          <label class="label">Username</label>
-          <input class="input" type="text" placeholder="Username">
-        </div>
-
-        <div class="form-field">
-          <label class="label">Password</label>
-          <input class="input" type="text" placeholder="Password">
+          <label class="label">School Name</label>
+          <input class="input" type="text" placeholder="School Name">
         </div>
 
         <div class="form-field">
@@ -74,11 +91,21 @@
           <input class="input" type="text" placeholder="Credit card stuff">
         </div>
 
-        <button class="button is-success" id="submit">Submit</button>
+        <button class="button is-success" id="submit">Complete Transaction</button>
 
       </div>
 
     </div>
+	<div class="split right">
+		<h1>Transaction Details:</h1>
+		<div class="sidebar">
+			<p>Product: Dynamic-DEN</p>
+			<br>
+			<p>Price: $1000/yr</p>
+			<br>
+			<p>Renews Annually</p>
+		</div>
+	</div>
   </body>
 </html>
 

@@ -6,8 +6,14 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', e => {
-      document.getElementById('buy-now').addEventListener('click', e => {
+      document.getElementById('btn-buy').addEventListener('click', e => {
         window.location = 'buy.html'
+      })
+    })
+	
+	document.addEventListener('DOMContentLoaded', e => {
+      document.getElementById('btn-demo').addEventListener('click', e => {
+        window.location = 'https://falcontime.herokuapp.com/'
       })
     })
   </script>
@@ -47,10 +53,13 @@
         </div>
       </section>
 
-      <button class="box button is-success" id="buy-now">
-        BUY NOW
-      </button>
-
+		<div id="button-parent" style="text-align:center">
+			<div id="button-container" style="display:inline-block">
+			  <button class="box button is-success" id="btn-demo" style="float:left; text-align:center; margin:10px">Product Demo</button>
+			  <button class="box button is-success" id="btn-buy" style="float:left; text-align:center; margin:10px">Pricing & Sign Up</button>
+			</div>
+		</div>
+     
       <div class="title">Customer testimonials</div>
 
       <div class="box">
